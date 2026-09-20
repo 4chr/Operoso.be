@@ -291,6 +291,13 @@
       margin-top: 14px;
     }
 
+    .hero-lede {
+      margin-top: 20px;
+      max-width: 56ch;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+
     .hero-actions {
       margin-top: 34px;
       display: flex;
@@ -435,6 +442,56 @@
     .service-card p {
       color: var(--text-muted);
       font-size: 0.94rem;
+    }
+
+    /* ---------- Technologieën ---------- */
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 14px;
+    }
+
+    .tech-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--card-bg);
+      text-align: center;
+    }
+
+    .tech-item img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
+    .tech-item span {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .exp-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .exp-pill {
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
     }
 
     /* ---------- Over mij ---------- */
@@ -774,9 +831,10 @@
       </a>
       <ul class="nav-links">
         <li><a href="#diensten">Diensten</a></li>
+        <li><a href="#technologieen">Technologieën</a></li>
+        <li><a href="#ervaring">Ervaring</a></li>
         <li><a href="#over-mij">Over mij</a></li>
-        <!-- <li><a href="#ervaring">Ervaring</a></li>
-        <li><a href="#cases">Cases</a></li> -->
+        <!-- <li><a href="#cases">Cases</a></li> -->
         <li><a href="#contact">Contact</a></li>
       </ul>
       <a class="nav-cta" href="#contact">Plan een gesprek</a>
@@ -792,13 +850,11 @@
         <div>
           <p class="eyebrow" style="color:var(--accent)">Software &amp; consultancy op maat</p>
           <h1>Oplossingen die uw organisatie vooruit helpen.</h1>
-          <div class="hero-actions">
-            <a class="btn btn-ghost" href="#diensten">Bekijk diensten</a>
-          </div>
+          <p class="hero-lede">Als zelfstandig software-architect en ontwikkelaar help ik organisaties met software op maat, technisch advies en hands-on ontwikkeling — van eerste analyse tot productie en opvolging.</p>
           <div class="hero-stats">
             <div class="hero-stat"><b>15+ jaar</b><span>ervaring in softwareontwikkeling</span></div>
-            <div class="hero-stat"><b>Verschillende rollen</b><span>in een project</span></div>
-            <div class="hero-stat"><b>Meerdere sectoren</b><span>brede branche-ervaring</span></div>
+            <div class="hero-stat"><b>Meerdere rollen</b><span>in een project</span></div>
+            <div class="hero-stat"><b>Diverse sectoren</b><span>brede branche-ervaring</span></div>
           </div>
         </div>
       </div>
@@ -848,6 +904,75 @@
       </div>
     </section>
 
+    <section id="technologieen" class="band-light">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Technologieën</p>
+          <h2>Tools en talen waarmee ik werk</h2>
+          <p>Een brede, actuele stack — van backend en databases tot frontend en integraties — opgebouwd doorheen diverse
+            projecten en sectoren.</p>
+        </div>
+        <div class="tech-grid" data-reveal>
+          <div class="tech-item"><img src="icons/csharp.svg" alt="C#" loading="lazy"><span>C#</span></div>
+          <div class="tech-item"><img src="icons/dotnet.svg" alt=".NET" loading="lazy"><span>.NET</span></div>
+          <div class="tech-item"><img src="icons/azure.svg" alt="Azure" loading="lazy"><span>Azure</span></div>
+          <div class="tech-item"><img src="icons/sqlserver.svg" alt="SQL Server" loading="lazy"><span>SQL Server</span></div>
+          <div class="tech-item"><img src="icons/mysql.svg" alt="MySQL" loading="lazy"><span>MySQL</span></div>
+          <div class="tech-item"><img src="icons/oracle.svg" alt="Oracle" loading="lazy"><span>Oracle</span></div>
+          <div class="tech-item"><img src="icons/mongodb.svg" alt="MongoDB" loading="lazy"><span>MongoDB</span></div>
+          <div class="tech-item"><img src="icons/cosmosdb.svg" alt="CosmosDB" loading="lazy"><span>CosmosDB</span></div>
+          <div class="tech-item"><img src="icons/entityframework.svg" alt="Entity Framework" loading="lazy"><span>Entity Framework</span></div>
+          <div class="tech-item"><img src="icons/dapper.svg" alt="Dapper" loading="lazy"><span>Dapper</span></div>
+          <div class="tech-item"><img src="icons/aurelia.svg" alt="Aurelia" loading="lazy"><span>Aurelia</span></div>
+          <div class="tech-item"><img src="icons/vuejs.svg" alt="Vue.js" loading="lazy"><span>Vue.js</span></div>
+          <div class="tech-item"><img src="icons/knockoutjs.svg" alt="KnockoutJS" loading="lazy"><span>KnockoutJS</span></div>
+          <div class="tech-item"><img src="icons/jquery.svg" alt="jQuery" loading="lazy"><span>jQuery</span></div>
+          <div class="tech-item"><img src="icons/html.svg" alt="HTML" loading="lazy"><span>HTML</span></div>
+          <div class="tech-item"><img src="icons/css.svg" alt="CSS" loading="lazy"><span>CSS</span></div>
+          <div class="tech-item"><img src="icons/sass.svg" alt="SASS" loading="lazy"><span>SASS</span></div>
+          <div class="tech-item"><img src="icons/tailwindcss.svg" alt="Tailwind CSS" loading="lazy"><span>Tailwind CSS</span></div>
+          <div class="tech-item"><img src="icons/javascript.svg" alt="JavaScript" loading="lazy"><span>JavaScript</span></div>
+          <div class="tech-item"><img src="icons/typescript.svg" alt="TypeScript" loading="lazy"><span>TypeScript</span></div>
+          <div class="tech-item"><img src="icons/bootstrap.svg" alt="Bootstrap" loading="lazy"><span>Bootstrap</span></div>
+          <div class="tech-item"><img src="icons/powerbi.svg" alt="Power BI" loading="lazy"><span>Power BI</span></div>
+          <div class="tech-item"><img src="icons/sharepoint.svg" alt="SharePoint" loading="lazy"><span>SharePoint</span></div>
+          <div class="tech-item"><img src="icons/razor.svg" alt="Razor" loading="lazy"><span>Razor</span></div>
+          <div class="tech-item"><img src="icons/mvc.svg" alt="MVC" loading="lazy"><span>MVC</span></div>
+          <div class="tech-item"><img src="icons/rabbitmq.svg" alt="RabbitMQ" loading="lazy"><span>RabbitMQ</span></div>
+          <div class="tech-item"><img src="icons/iis.svg" alt="IIS" loading="lazy"><span>IIS</span></div>
+          <div class="tech-item"><img src="icons/git.svg" alt="Git" loading="lazy"><span>Git</span></div>
+          <div class="tech-item"><img src="icons/azuredevops.svg" alt="Azure DevOps" loading="lazy"><span>Azure DevOps</span></div>
+          <div class="tech-item"><img src="icons/restapi.svg" alt="REST API" loading="lazy"><span>REST API</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ervaring" class="band-dark">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Ervaring</p>
+          <h2>Waar ik dit toepas</h2>
+          <p>De diensten en technologieën komen samen in concrete uitdagingen — de terreinen waarin
+            deze zich bevinden.</p>
+        </div>
+        <div class="exp-pills" data-reveal>
+          <span class="exp-pill">Webapplicaties</span>
+          <span class="exp-pill">Mobiele PWA's</span>
+          <span class="exp-pill">Procesautomatisering</span>
+          <span class="exp-pill">Security & authenticatie</span>
+          <span class="exp-pill">Systeemintegraties</span>
+          <span class="exp-pill">B2B integraties</span>
+          <span class="exp-pill">Hardware-integraties</span>
+          <span class="exp-pill">Performance optimalisaties</span>
+          <span class="exp-pill">Data-migraties</span>
+          <span class="exp-pill">Cloud migraties</span>
+          <span class="exp-pill">Legacy modernisering</span>
+          <span class="exp-pill">CI/CD</span>
+          <span class="exp-pill">Rapportering & dashboards</span>
+        </div>
+      </div>
+    </section>
+
     <section id="over-mij" class="about band-light">
       <div class="wrap about-grid">
         <div data-reveal>
@@ -870,47 +995,6 @@
       </div>
     </section>
 <!-- 
-    <section id="ervaring" class="band-dark">
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <p class="eyebrow">Ervaring</p>
-          <h2>Doorheen de technologiestack</h2>
-        </div>
-        <div class="timeline" data-reveal>
-          <div class="tl-item">
-            <div class="tl-period">ERP · Dynamics&nbsp;AX</div>
-            <div class="tl-body">
-              <h3>Ontwikkelaar &amp; technisch architect</h3>
-              <p>Start van de carrière binnen ERP-consultancy, met verantwoordelijkheid voor zowel ontwikkeling als
-                technische architectuur.</p>
-            </div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-period">Microsoft stack</div>
-            <div class="tl-body">
-              <h3>Consultant software op maat</h3>
-              <p>Overstap naar maatwerksoftware binnen de Microsoft-technologiestack, met focus op klantspecifieke
-                oplossingen.</p>
-            </div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-period">Web · Mobile · Azure</div>
-            <div class="tl-body">
-              <h3>Cloud-first specialisatie</h3>
-              <p>Verdieping in web-, mobiele en cloud-first ontwikkeling op Microsoft Azure.</p>
-            </div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-period">Vandaag</div>
-            <div class="tl-body">
-              <h3>Ontwikkelaar, architect &amp; consultant</h3>
-              <p>Actief voor verschillende klanten en sectoren, met een brede technische en domeinkennis.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="cases" class="band-light">
       <div class="wrap">
         <div class="section-head" data-reveal>
