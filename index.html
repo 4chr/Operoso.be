@@ -5,7 +5,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Operoso - Software &amp; consultancy op maat</title>
+  <meta name="description"
+    content="Zelfstandige software-consultancy: software op maat, technisch advies en hands-on ontwikkeling binnen de Microsoft-technologiestack.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operoso.be/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Operoso">
+  <meta property="og:title" content="Operoso - Software &amp; consultancy op maat">
+  <meta property="og:description"
+    content="Zelfstandige software-consultancy: software op maat, technisch advies en hands-on ontwikkeling binnen de Microsoft-technologiestack.">
+  <meta property="og:url" content="https://www.operoso.be/">
+  <meta property="og:image" content="https://www.operoso.be/images/over-mij.png">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+  <meta property="og:locale" content="nl_BE">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Operoso - Software &amp; consultancy op maat">
+  <meta name="twitter:description"
+    content="Zelfstandige software-consultancy: software op maat, technisch advies en hands-on ontwikkeling binnen de Microsoft-technologiestack.">
+  <meta name="twitter:image" content="https://www.operoso.be/images/over-mij.png">
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Operoso",
+    "url": "https://www.operoso.be/",
+    "image": "https://www.operoso.be/images/over-mij.png",
+    "description": "Zelfstandige software-consultancy: software op maat, technisch advies en hands-on ontwikkeling binnen de Microsoft-technologiestack.",
+    "founder": {
+      "@type": "Person",
+      "name": "Anthony Christiaens",
+      "jobTitle": "Oprichter Operoso",
+      "sameAs": "https://www.linkedin.com/in/anthony-christiaens-42024632/"
+    },
+    "email": "info@operoso.be",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Daknam-dorp 50",
+      "postalCode": "9160",
+      "addressLocality": "Lokeren",
+      "addressCountry": "BE"
+    },
+    "areaServed": "BE",
+    "sameAs": ["https://www.linkedin.com/in/anthony-christiaens-42024632/"]
+  }
+  </script>
   <style>
     :root {
       --bg: #ffffff;
@@ -507,26 +556,13 @@
       aspect-ratio: 4 / 5;
       border-radius: 20px;
       border: 1.5px dashed var(--border);
-      background: url('images/over-mij.png') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      color: var(--text-muted);
-      text-align: center;
-      padding: 20px;
+      overflow: hidden;
     }
 
-    .photo-frame svg {
-      width: 34px;
-      height: 34px;
-      opacity: 0.6;
-    }
-
-    .photo-frame span {
-      font-size: 0.82rem;
-      font-weight: 500;
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .about-name {
@@ -976,7 +1012,8 @@
     <section id="over-mij" class="about band-light">
       <div class="wrap about-grid">
         <div data-reveal>
-          <div class="photo-frame" alt="Foto van Anthony Christiaens">
+          <div class="photo-frame">
+            <img src="images/over-mij.png" alt="Foto van Anthony Christiaens, oprichter van Operoso" loading="lazy">
           </div>
         </div>
         <div data-reveal>
